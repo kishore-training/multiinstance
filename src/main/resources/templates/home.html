@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Welcome </title>
+</head>
+<body>
+<div class="container my-5" >
+<h1 >Welcome to Hospital Appointment Multiinstance Application!</h1>
+<img src="static/building.jpg"  class="img-rounded" alt="Hospital" height="200">
+<br>
+<br>
+    <div style="padding-right: 500px" >
+<p style="animation: ease-in; font-family: 'Californian FB'" > This is a demo of multiinstance hospital management application on cloud. A seperate instance of this application
+    is hosted per customer/tenant/hospital. You have completed the registration process and a seperate instance of this
+application has been created for him .</p>
+    <br>
+        <p style="font-family: 'Californian FB'"> This application enables entering and viewing the appointments of doctors working in a hospital. We have created the default tenant administrator user with user: <b>tenant_admin</b> and password : <b>password</b></p>
+<br>
+<p >Please click on Login <a style="color: darkgreen" th:href="@{/login}"> LOGIN</a> </p>
+    </div>
+</div>
+</body>
+</html>
